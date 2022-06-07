@@ -1,0 +1,260 @@
+  /*Configuração geral do site ---------------------------------------------------------------------------------------->*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  /*FONT-SIZE DO SITE*/
+  font-size: 62.5%;
+    /*1 rem = 10px*/
+
+    /*Colors*/
+  --ColorBackGround: #22212C;
+  --BoxColor: #302F3D;
+  --TextPrimary: #837E9F;
+  --PurpleText: #8257E6;
+
+    /*Text*/
+  --PricipalText:'Merriweather Sans', sans-serif;
+  --CodeText: 'Fira Code', monospace;
+
+}
+
+body{
+  background-color: var(--ColorBackGround);
+}
+
+.wrapper{
+  width:  min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+button{
+  /*tirar as decorations dos buttons*/
+  border: 0rem;
+  background-color: transparent;
+}
+
+.box {
+  border-radius: 2rem ;
+  background-color: var(--BoxColor);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boxImg{
+  width: 29.5rem;
+  
+  padding-bottom: 1rem;
+
+  margin-bottom: 3.0rem;
+}
+
+.ImgBox{
+  width: 29.5rem;
+  height: 19.5rem;
+
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.ImgH4{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+
+
+
+  font-family: var(--PricipalText);
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.5rem;
+
+  color: var(--TextPrimary);
+}
+
+.ImgP{
+  margin-left: 3rem;
+
+  font-family: var(--CodeText);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+
+  width: 22.7rem;
+  
+}
+
+.titulos{
+  text-align: center;
+  margin-top: 3.5rem;
+ 
+  padding: 2.5rem;
+
+  font-family:var(--PricipalText);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 4.0rem;
+
+
+  color: var(--TextPrimary);
+}
+
+
+
+/*NavConfig----------------------------------------------------------------------------------------------------------*/
+
+  nav .wrapper{
+    display: flex;
+    height: 7rem;
+    justify-content: space-between;
+    align-items: center;
+  
+
+   
+  }
+
+
+ /*HelloWorldConfig-------------------------------------------------------------------------------------------------------*/ 
+
+ main section.HelloWorld{
+   height: 25.0rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding-inline: 1.5rem;
+ }
+   
+
+ 
+ 
+
+ main section img#imgEu {
+
+   position: relative;
+   top:2.4rem ;
+   width: 15rem;
+   height: 20rem;
+ 
+ }
+
+ /*ApresentaçãoConfig-------------------------------------------------------------------------------------------------------*/ 
+
+ main section.apresent{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-block: 4.5rem;
+
+ }
+
+ main section h2 {
+  color: var(--TextPrimary);
+  font-family: var(--PricipalText);
+  font-weight: 700;
+  font-size: 3.2rem;
+  width: 13.0rem;
+  height: 12.6rem;
+  line-height: 4.0rem;
+
+ }
+
+ main section div.apresentText {
+  width: 15.9rem;
+  height: 15.6rem;
+  background-color: var(--BoxColor);
+  border-radius: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ main section p.paragraphN1{
+  line-height: 3.0rem;
+  font-weight: 400;
+  font-family: var(--PricipalText);
+  font-size: 2.4rem;
+  color: #FFFFFF;
+
+  width: 12rem;
+  height: 9.5rem;
+ }
+
+ /*projectsNumbersConfig-------------------------------------------------------------------------------------------------------*/ 
+
+ main section.projectsNumbers{
+  height: 40.3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-block: 6.0rem;
+
+ }
+
+ main section.projectsNumbers h3 {
+  font-family: var(--CodeText);
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 8.4rem;
+  
+  color: var(--PurpleText);
+ }
+
+ main section.projectsNumbers p {
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 2.5rem;
+  font-family: var(--PricipalText);
+  color: var(--TextPrimary);
+ }
+
+ /*projectsConfig-------------------------------------------------------------------------------------------------------*/ 
+
+main section.projects div.images{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ 
+
+ /*hardSkillsConfig-------------------------------------------------------------------------------------------------------*/ 
+
+ main section.hardSkills{
+   height: 41.2rem ;
+   margin-bottom: 6rem;
+   padding-inline: 4rem;
+ }
+
+ main section.hardSkills p {
+
+  display: inline-block;
+  font-family: var(--PricipalText);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.0rem;
+  
+  color: #837E9F;
+ }
+
+ main section.hardSkills div#svgsTechs{
+   display:flex;
+   justify-content: space-evenly;
+   margin-block:2.5rem ;
+  
+ }
+
+  /*softSkillsConfig-------------------------------------------------------------------------------------------------------*/ 
