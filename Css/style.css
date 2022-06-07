@@ -112,7 +112,7 @@ button{
 
 /*NavConfig----------------------------------------------------------------------------------------------------------*/
 
-  nav .wrapper{
+ header nav .wrapper{
     display: flex;
     height: 7rem;
     justify-content: space-between;
