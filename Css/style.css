@@ -53,7 +53,7 @@ button{
 .boxImg{
   width: 29.5rem;
   
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 
   margin-bottom: 3.0rem;
 }
@@ -84,7 +84,7 @@ button{
   margin-left: 3rem;
 
   font-family: var(--CodeText);
-  font-weight: 400;
+  font-weight: lighter;
   font-size: 1.2rem;
   line-height: 1.6rem;
 
@@ -117,9 +117,50 @@ button{
     height: 7rem;
     justify-content: space-between;
     align-items: center;
+    gap:10rem;
+  }
+
   
 
-   
+
+
+  /*ShowMobileNavConfig----------------------------------------------------------------*/
+
+  body.MenuOn main,
+  body.MenuOn footer,
+  body.MenuOn nav {
+   display: none;
+  }
+
+  header section.Open div.iconsTop{
+    display: flex;
+    height: 7rem;
+    justify-content: space-around;
+    gap:10rem;
+    align-items: center;
+  }
+
+  header section.Open ul{
+    display: flex;
+
+    list-style: none;
+    color: var(--TextPrimary);
+    font-size: 3.2rem;
+    font-family: var(--PricipalText);
+    font-weight:bolder;
+
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 6rem;
+
+
+
+  }
+
+  header section.Close {
+    display: none;
   }
 
 
@@ -146,6 +187,8 @@ button{
    height: 20rem;
  
  }
+
+
 
  /*ApresentaçãoConfig-------------------------------------------------------------------------------------------------------*/ 
 
@@ -228,6 +271,8 @@ main section.projects div.images{
   align-items: center;
 }
 
+
+
  
 
  /*hardSkillsConfig-------------------------------------------------------------------------------------------------------*/ 
@@ -258,3 +303,6 @@ main section.projects div.images{
  }
 
   /*softSkillsConfig-------------------------------------------------------------------------------------------------------*/ 
+
+
+  
