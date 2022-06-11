@@ -4,6 +4,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+
 }
 
 :root {
@@ -115,7 +118,7 @@ button{
  header nav .wrapper{
     display: flex;
     height: 7rem;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap:10rem;
   }
@@ -130,6 +133,16 @@ button{
   body.MenuOn footer,
   body.MenuOn nav {
    display: none;
+  }
+  section.Open{
+    height:100%;
+    transform: translateY(100%);
+  
+  }
+
+  body.MenuOn section.Open{
+  transition: transform 700ms;
+  transform: translateY(0%);
   }
 
   header section.Open div.iconsTop{
@@ -153,11 +166,21 @@ button{
     flex-direction: column;
     align-items: center;
 
-    margin-top: 6rem;
-
-
-
+    margin-top: 7rem;
   }
+
+  section.Open ul li a{
+    color:var(--TextPrimary);
+   
+  }
+
+
+  section.Open ul li a:hover{
+    color:#8257E6;
+   
+  }
+
+  
 
   header section.Close {
     display: none;
