@@ -132,17 +132,18 @@ button{
   body.MenuOn main,
   body.MenuOn footer,
   body.MenuOn nav {
-   display: none;
+  display: none;
+
   }
   section.Open{
-    height:100%;
-    transform: translateY(100%);
+    transform: translateY(0vh);
+    height: 100vh;
   
   }
 
   body.MenuOn section.Open{
   transition: transform 700ms;
-  transform: translateY(0%);
+  transform: translateY(100vh) scale();
   }
 
   header section.Open div.iconsTop{
@@ -189,7 +190,7 @@ button{
 
  /*HelloWorldConfig-------------------------------------------------------------------------------------------------------*/ 
 
- main section.HelloWorld{
+ main section#HelloWorld{
    height: 25.0rem;
 
    display: flex;
@@ -215,7 +216,7 @@ button{
 
  /*ApresentaçãoConfig-------------------------------------------------------------------------------------------------------*/ 
 
- main section.apresent{
+ main section#apresent{
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -258,7 +259,7 @@ button{
 
  /*projectsNumbersConfig-------------------------------------------------------------------------------------------------------*/ 
 
- main section.projectsNumbers{
+ main section#projectsNumbers{
   height: 40.3rem;
 
   display: flex;
@@ -269,7 +270,7 @@ button{
 
  }
 
- main section.projectsNumbers h3 {
+ main section#projectsNumbers h3 {
   font-family: var(--CodeText);
   font-weight: 700;
   font-size: 6.4rem;
@@ -278,7 +279,7 @@ button{
   color: var(--PurpleText);
  }
 
- main section.projectsNumbers p {
+ main section#projectsNumbers p {
   font-weight: 400;
   font-size: 2.0rem;
   line-height: 2.5rem;
@@ -288,7 +289,7 @@ button{
 
  /*projectsConfig-------------------------------------------------------------------------------------------------------*/ 
 
-main section.projects div.images{
+main section#projects div.images{
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -300,13 +301,13 @@ main section.projects div.images{
 
  /*hardSkillsConfig-------------------------------------------------------------------------------------------------------*/ 
 
- main section.hardSkills{
+ main section#hardSkills{
    height: 41.2rem ;
    margin-bottom: 6rem;
    padding-inline: 4rem;
  }
 
- main section.hardSkills p {
+ main section#hardSkills p {
 
   display: inline-block;
   font-family: var(--PricipalText);
@@ -318,7 +319,7 @@ main section.projects div.images{
   color: #837E9F;
  }
 
- main section.hardSkills div#svgsTechs{
+ main section#hardSkills div#svgsTechs{
    display:flex;
    justify-content: space-evenly;
    margin-block:2.5rem ;

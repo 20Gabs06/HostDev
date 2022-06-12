@@ -14,4 +14,5 @@
     addMenu.classList.remove('Open')
     addMenu.classList.add('Close')
   }
-
+  
+  Math.random()
