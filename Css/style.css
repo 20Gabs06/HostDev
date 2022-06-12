@@ -331,6 +331,32 @@ main section#hardSkills .skillsShadows{
 }
 
   /*softSkillsConfig-------------------------------------------------------------------------------------------------------*/ 
+section#softSkills{
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  gap:3rem;
+}
+
+section#softSkills div.cardSkills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 29.5rem;
+  height: 7.3rem;
 
 
-  
+}
+
+section#softSkills div.cardSkills p{
+
+
+font-family: 'Merriweather Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 2.4rem;
+line-height: 3rem;
+
+color: var(--PurpleText);
+}
