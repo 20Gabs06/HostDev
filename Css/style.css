@@ -133,17 +133,25 @@ button{
   body.MenuOn footer,
   body.MenuOn nav {
   display: none;
-
   }
-  section.Open{
-    transform: translateY(0vh);
-    height: 100vh;
+
+  body.MenuOn {
+    overflow: hidden;
+  }
+
+  section#menu{
+    transform:translateY(100%);
   
   }
 
-  body.MenuOn section.Open{
-  transition: transform 700ms;
-  transform: translateY(100vh) scale();
+  body.MenuOn section#menu{
+  
+  transition: 300ms ease;
+  transform: translateY(0%);
+  
+  width: 100vw;
+  height: 100vh;
+ 
   }
 
   header section.Open div.iconsTop{
@@ -338,6 +346,10 @@ section#softSkills{
   gap:3rem;
 }
 
+section#softSkills h3{
+  margin-top: 0;
+}
+
 section#softSkills div.cardSkills{
   display: flex;
   align-items: center;
@@ -351,7 +363,6 @@ section#softSkills div.cardSkills{
 
 section#softSkills div.cardSkills p{
 
-
 font-family: 'Merriweather Sans';
 font-style: normal;
 font-weight: 700;
@@ -360,3 +371,20 @@ line-height: 3rem;
 
 color: var(--PurpleText);
 }
+
+ /*----------------QuemSouConfig-------------------------------------------------------------------------------------*/ 
+ section#quemSouEu div.box {
+  padding: 3rem;
+
+ }
+ section#quemSouEu p.ImgP{
+  text-align: center;
+  font-size: 2rem;
+  color:var(--TextPrimary);
+  line-height: 3rem;
+width: auto;
+margin: 2.5rem;
+
+ }
+
+ section#quemSouEu p.ImgP::fir
